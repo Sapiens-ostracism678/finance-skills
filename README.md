@@ -2,6 +2,12 @@
 
 A collection of agent skills for financial analysis and trading.
 
+## Demo
+
+### options-payoff — Butterfly Spread
+
+![Options Payoff Demo](skills/options-payoff/options-payoff-demo.png)
+
 ## Available Skills
 
 | Skill | Description |
